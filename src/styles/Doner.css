@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --background-color:#f2f9f7;
+    --border-radius:8px;
+    --text-color:#214f8a;
+    --flex-direction: column;
+    --input-bg-color:rgb(245,245,245);
+    --hover-color:rgb(230,230,230);
+    --inp-border-color: #214f8a;
+    --font-family:sans-serif;
+    --input-text-color:currentcolor;
+    --btn-radio-color:linear-gradient(90.26deg, #214f89 .17%, #12bcab 99.77%);
+    --btn-hover-background:linear-gradient(70.26deg, #407dc7 9.17%, #37998f 90.77%);
+
+}
+.doner-container{
+    width: 100%;
+    padding: 10px 20px;
+    height: 100vh;
+}
+.doner-types{
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius:var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+   
+}
+.types-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.types-img{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding: 20px 30px;
+    width: 150px;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0px 12px 2px #ddd;;
+    background-color: #fff;
+    cursor: pointer;
+}
+.img-active{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding: 20px 30px;
+    width: 150px;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0px 12px 2px #ddd;
+    border: 1px solid #214f8a;
+    background-color: #fff;
+    cursor: pointer;
+}
+.image{
+    width: 60px;
+    filter: grayscale(70%);
+}
+.img1{
+    width: 60px;
+    filter: grayscale(0%);
+}
+.types-img:hover{
+    opacity: 0.7;
+}
+h4{
+    margin: 20px 0px;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    background: #f2f9f7;
+    color: var(--text-color);
+    font-family:var(--font-family);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 24px;
+    padding: 8px;
+    text-align: left;
+}
+.Donor-consent, .Contact-information, .Personal-details, .donation{ 
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.Donor-consent{
+    padding-bottom: 20px;
+}
+.form-inp{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.form-check{
+    width: 350px;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 20px;
+    align-items: center;
+    flex-direction: row-reverse;
+   
+}
+.doner-check{
+    width: 50px;
+    height: 20px;
+}
+.consent{
+    font-size: 18px;
+}
+.radio-box{
+    display: flex;
+    justify-content:space-around;
+}
+.radio-btn{
+    position: relative;
+}
+.radio-label{
+    position: absolute;
+    left:-30px;
+    top:-10px;
+    max-width: 95px;
+    border-radius: 8px;
+    
+    border: 1px solid #ddd;
+    padding: 10px 16px;
+}
+.unchecked{
+    background: var(--input-bg-color);
+}
+.unchecked:hover{
+    background:var(--hover-color);
+}
+.checked{
+    background:var(--btn-radio-color); 
+     color: #fff;
+}
+label{
+    font-family: var(--font-family);
+    color: #1f2937;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.danger{
+    color: red;
+}
+input,select{
+    background-color: var(--input-bg-color);
+  color: var(--input-text-color);
+  font-size: 1rem;
+  font-weight: 500;
+  border:2px solid #ddd;
+  padding: 0.9rem;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+input:focus{
+    border: 2px solid #214f8a;
+}
+
+.btn-doner{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+button{
+    font-size:1rem;
+    font-weight: 700;
+    font-family:var(--font-family) ;
+    padding:15px;
+    color: var(--text-color);
+    border-radius: var(--border-radius);
+    max-width: 95px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+.cancle-btn{
+    background-color: #e8f3f5;
+}
+.submit-btn{
+    background:var(--btn-radio-color);
+    color: #fff;
+}
+.submit-btn:hover{
+    background:var(--btn-hover-background) ;
+}
+form{
+    padding-bottom: 50px;
+}
